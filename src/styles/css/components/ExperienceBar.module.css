@@ -1,0 +1,30 @@
+.experienceBar {
+  display: inherit;
+  align-items: center;
+}
+.experienceBar span {
+  font-size: 1.6rem;
+}
+.experienceBar div {
+  flex: 1;
+  height: 0.4rem;
+  border-radius: 0.4rem;
+  background: #dcdde0;
+  margin: 0 2rem;
+  position: relative;
+}
+.experienceBar div div {
+  margin-left: 0rem;
+  height: inherit;
+  border-radius: inherit;
+  background: #4cd62b;
+  transition: 0.9s ease;
+}
+.experienceBar div span.currentExperience {
+  position: absolute;
+  top: 1.2rem;
+  transform: translateX(-50%);
+  transition: 0.9s ease;
+}
+
+/*# sourceMappingURL=ExperienceBar.module.css.map */

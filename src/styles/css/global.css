@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: #f2f3f5;
+  color: #666;
+  padding: 0.5rem 2rem 5rem;
+}
+
+body,
+input,
+textarea,
+button {
+  font: 400 1.6rem "Inter", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=global.css.map */

@@ -1,0 +1,89 @@
+@import "../colors.scss";
+
+@mixin center() {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.challengeBoxContainer {
+  @include center;
+  height: 100%;
+
+  background: $white;
+  border-radius: 5%;
+  box-shadow: 0 0 6rem rgba(0, 0, 0, 0.05);
+
+  padding: 2.4rem 3.2rem;
+
+  text-align: center;
+  .challengeNotActive {
+    strong {
+      font-size: 2.4rem;
+      font-weight: 500;
+      line-height: 1.4;
+    }
+    p {
+      @include center;
+      line-height: 1.4;
+      max-width: 70%;
+      margin: 4.8rem auto 0;
+      img {
+        margin-bottom: 1.6rem;
+      }
+    }
+  }
+  .challengeActive {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    header {
+      color: $blue;
+      font-weight: 600;
+      font-size: 2rem;
+      padding: 0 3.2rem 2.4rem;
+      border-bottom: 0.1rem solid $grayLine;
+    }
+    main {
+      @include center;
+      flex: 1;
+      strong {
+        font-size: 3.2rem;
+        font-weight: 600;
+        color: $title;
+        margin: 2.4rem 0 1.6rem;
+      }
+      p {
+        line-height: 1.5;
+      }
+    }
+    footer {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      button {
+        @include center;
+        height: 4.8rem;
+
+        border: 0;
+        border-radius: 0.5rem;
+        color: $white;
+
+        font-size: 1.6rem;
+        font-weight: 600;
+
+        transition: filter 0.2s;
+      }
+      button.challengeFailedButton {
+        background: $red;
+      }
+      button.challengeSucceededButton {
+        background: $green;
+      }
+      button:hover {
+        filter: brightness(0.9);
+      }
+    }
+  }
+}

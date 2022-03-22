@@ -1,0 +1,27 @@
+@import "../colors.scss";
+.experienceBar {
+  display: inherit;
+  align-items: center;
+  span {
+    font-size: 1.6rem;
+  }
+  div {
+    flex: 1;
+    height: 0.4rem;
+    border-radius: 0.4rem;
+    background: $grayLine;
+    margin: 0 2rem;
+    position: relative;
+    div {
+      margin-left: -0rem;
+      height: inherit;
+      border-radius: inherit;
+      background: $green;
+    }
+    span.currentExperience {
+      position: absolute;
+      top: 1.2rem;
+      transform: translateX(-50%);
+    }
+  }
+}
