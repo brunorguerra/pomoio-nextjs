@@ -27,15 +27,6 @@ export default function Home(props: HomeProps) {
       <div className={styles.container}>
         <Head>
           <title>Início | Pomo.io</title>
-
-          <link rel="shortcut icon" href="favicon.png" type="image/png" />
-
-          <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Rajdhani:wght@600&display=swap"
-            rel="stylesheet"
-          />
         </Head>
         <ExperienceBar />
 
@@ -56,7 +47,7 @@ export default function Home(props: HomeProps) {
   );
 }
 
-export const getServerSideProps: GetServerSideProps = (ctx) => {
+export const getServerSideProps: GetServerSideProps = async (ctx) => {
   const { level, currentExperience, challengesCompleted } = ctx.req.cookies;
 
   return {
