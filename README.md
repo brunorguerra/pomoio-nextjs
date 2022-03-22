@@ -39,6 +39,8 @@ Here are the technologies used in this project.
 - To run the project.
 
   `npm run dev`
+  
+  ```http://localhost:3000/```
 
 ## How to use
 
